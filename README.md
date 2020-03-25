@@ -1,2 +1,2 @@
-# zygis.domarkas-gmail.com
-WebPlatform2
+# WebPlatform2
+
