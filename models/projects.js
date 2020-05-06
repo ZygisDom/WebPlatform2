@@ -16,7 +16,21 @@ class DAO {
     init() {
         console.log('insert project IP3 Group Report');
         this.db.insert({
+<<<<<<< HEAD
             project: 'IP3 Group Report', module: 'Integrated Project 3', intendedDate: '24/04/20', actualDueDate: '29/04/20', tasks: 'tasks'
+=======
+            project: 'IP3 Group Report', module: 'Integrated Project 3', intendedDate: '24/04/20', actualDueDate: '29/04/20', tasks: [
+                {
+                    task: 'Task 1'
+                },
+                {
+                    task: 'Task 2'
+                },
+                {
+                    task: 'Task 3'
+                }
+            ]
+>>>>>>> samWeb
         }, function (err, doc) {
             if (err) {
                 console.log('Error inserting document IP3 Group Report into the database', err);
