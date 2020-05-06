@@ -1,6 +1,4 @@
 # WebPlatform2
-XAMPP Path: "XAMPP\htdocs\webplat\login.php" etc
+Run index.js using NodeJS or alternative environment
 
-URL: http://localhost/webplat/login.php
-
-phpmyadmin access: http://localhost/phpmyadmin
+URL: http://localhost:9000
