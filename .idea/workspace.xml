@@ -12,6 +12,20 @@
       <executable />
     </execution>
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="ProjectId" id="1bOoAD4e2PG0HsP13ztgyFBIHs6" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -21,7 +35,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../untitled" />
   </component>
   <component name="RunManager" selected="Node.js.index.js">
     <configuration name="db-play.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/db-play.js" working-dir="$PROJECT_DIR$">
@@ -49,7 +63,8 @@
       <updated>1588512354146</updated>
       <workItem from="1588512355334" duration="9674000" />
       <workItem from="1588537917443" duration="2915000" />
-      <workItem from="1588597817156" duration="19439000" />
+      <workItem from="1588597817156" duration="48165000" />
+      <workItem from="1588732665262" duration="3767000" />
     </task>
     <servers />
   </component>
@@ -61,22 +76,30 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1552" y="506" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1588648611841" />
-    <state width="2517" height="254" key="GridCell.Tab.0.bottom" timestamp="1588654266641">
+    <state x="633" y="459" key="FileChooserDialogImpl" timestamp="1588694981045">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="254" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1588654266641" />
-    <state width="2517" height="254" key="GridCell.Tab.0.center" timestamp="1588654266641">
+    <state x="633" y="459" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1588694981045" />
+    <state width="1179" height="254" key="GridCell.Tab.0.bottom" timestamp="1588729193549">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="254" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1588654266641" />
-    <state width="2517" height="254" key="GridCell.Tab.0.left" timestamp="1588654266641">
+    <state width="1179" height="254" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1588729193549" />
+    <state width="1179" height="254" key="GridCell.Tab.0.center" timestamp="1588729193549">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="254" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1588654266641" />
-    <state width="2517" height="254" key="GridCell.Tab.0.right" timestamp="1588654266641">
+    <state width="1179" height="254" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1588729193549" />
+    <state width="1179" height="254" key="GridCell.Tab.0.left" timestamp="1588729193549">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="254" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1588654266641" />
+    <state width="1179" height="254" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1588729193549" />
+    <state width="1179" height="254" key="GridCell.Tab.0.right" timestamp="1588729193549">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1179" height="254" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1588729193549" />
+    <state x="1647" y="524" key="com.intellij.ide.util.TipDialog" timestamp="1588732665588">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1647" y="524" key="com.intellij.ide.util.TipDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1588732665588" />
     <state x="1471" y="334" key="run.anything.popup" timestamp="1588637765706">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

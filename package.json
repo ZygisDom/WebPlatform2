@@ -13,6 +13,7 @@
   "author": "kh",
   "license": "ISC",
   "dependencies": {
+    "domino": "^2.1.5",
     "express": "^4.17.1",
     "mustache-express": "^1.3.0",
     "nedb": "^1.8.0"

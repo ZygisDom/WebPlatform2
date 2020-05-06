@@ -2,39 +2,63 @@
 
 <head>
   {{>header}}
+    <script>
+        function processLink(oForm){
+            var link = oForm.elements["projectLink"];
+            link = "/viewproject" + link;
+            window.location = link;
+            return false;
+        }
+    </script>
+
 </head>
 
 <body class="container">
 
-  <h1 class="display-4">{{title}}</h1>
-  <h2 class="display-5">Projects in Progress</h2>
+    <h1 class="display-4" style="padding-top: 50px; !important;">{{title}}</h1>
 
-    <div class="text-right">
-      <a href="/add" class="btn btn-primary">
-        Add a new project
-      </a>
+<div class="text-right">
+    <div class="btn-group dropup position-sticky" id="view-project" style="margin-bottom: 9.8rem;">
+        <button type="button" class="btn btn-primary dropdown-toggle btn-color" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding: 16px;margin-right: 15px; font-size: 1.1rem;">
+            View Shared Project
+        </button>
+        <div class="dropdown-menu" id="drpdwn">
+            <form  method="post" role="form">
+                <div class="form-group">
+                    <label for="projectLink" class="mx-auto d-flex justify-content-center" style="margin: 10px 0 !important;">View Project</label>
+                    <input type="name" class="form-control mx-auto d-flex justify-content-center" name="projectLink" id="projectLink" aria-describedby="emailHelp">
+                </div>
+                <button type="submit" class="btn btn-primary mx-auto d-flex justify-content-center" id="ViewProject" >View Project</button>
+            </form>
+        </div>
     </div>
 
-    <div class="text-left" style="margin-bottom: 1em;">
+    <a href="/add" class="btn btn-primary position-sticky" style="margin-bottom: 9.8rem; padding: 16px; font-size: 1.1rem;">
+        Add a new project
+    </a>
+    <h2 class="display-5 float-left" style="margin-top: 5rem;">Projects in Progress</h2>
+</div>
+
+    <div class="text-left" style="margin-bottom: 1rem;">
       <br>
 
       {{#projects}}
           <div class="card">
-              <h5 class="card-header">
+              <h4 class="card-header">
                   Project Name: {{project}}
-                  <a href="delete/{{project}}"><i class="fa fa-trash fa-lg"></i></a>
-                  <a href="edit/{{project}}"><i class="fa fa-edit fa-lg"></i></a>
-              </h5>
+                  <a href="delete/{{project}}"><i class="fa fa-trash fa-lg fa-size float-right"></i></a>
+                  <a href="edit/{{project}}"><i class="fa fa-edit fa-lg fa-size float-right"></i></a>
+              </h4>
 
               <div class="card-body">
                   <div class="card-text">
-                      Module: {{module}}
+                      <b>Module: </b>{{module}}
                   </div>
                   <div class="card-text">
-                      Intended Completion Date: {{intendedDate}}
+                      <b>Intended Completion Date: </b>{{intendedDate}}
                   </div>
                   <div class="card-text">
-                      Tasks: <br>
+                      <b>Tasks: </b> <br>
                       {{#tasks}}
                           <ul>
                           {{#.}}
@@ -47,6 +71,7 @@
               <div class="card-footer">
                   <b>Actual Due Date: {{actualDueDate}}</b>
                   <br>
+                  <b>Shareable Link: {{_id}}</b>
               </div>
           </div>
       <br>

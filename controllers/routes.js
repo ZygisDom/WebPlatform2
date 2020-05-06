@@ -27,6 +27,22 @@ controller.get('/add', function(request, response) {
     response.render("new-project", {'title':'Coursework Scheduler'});
 })
 
+controller.get('/viewproject', function(request, response) {
+    //var url_string = request.url;
+    //var url = new URL(url_string)
+    //var c = url.searchParams.get("c");
+    var c = "09voF8To05MFxVkz";
+    projectDAO.getProjectByID(c)
+        .then((list) => {
+            response.render("viewproject", {
+                "title": "Coursework Scheduler",
+                "item":list
+            });
+        })
+        .catch((err) => {
+            console.log('Error getting project:', c, err);
+        });
+})
 
 controller.get('/delete/:project', function(request, response) {
     projectDAO.deleteProject(request.params.project);
@@ -37,6 +53,7 @@ controller.get('/edit/:project', function(request, response) {
 
     projectDAO.getProject(request.params.project)
     .then((list) => {
+        //console.log("Render edit project page with", list);
         response.render("edit-project", {
             "title": "Coursework Scheduler",
             "item":list
