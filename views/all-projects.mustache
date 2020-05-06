@@ -10,6 +10,23 @@
   <h2 class="display-5">Projects in Progress</h2>
 
     <div class="text-right">
+	
+		<div class="btn-group dropup position-sticky" id="view-project">
+    <button type="button" class="btn btn-secondary dropdown-toggle btn-color" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        View Shared Project
+    </button>
+    <div class="dropdown-menu">
+        <form  method="post" role="form">
+            <div class="form-group">
+                <label for="projectLink" class="mx-auto d-flex justify-content-center" style="margin: 10px 0 !important;">View Project</label>
+                <input type="name" class="form-control mx-auto d-flex justify-content-center" name="projectLink" id="projectLink" aria-describedby="emailHelp">
+            </div>
+            <button type="submit" class="btn btn-primary mx-auto d-flex justify-content-center" id="ViewProject">View Project</button>
+        </form>
+    </div>
+</div>
+	
+	
       <a href="/add" class="btn btn-primary">
         Add a new project
       </a>
@@ -47,6 +64,7 @@
               <div class="card-footer">
                   <b>Actual Due Date: {{actualDueDate}}</b>
                   <br>
+				  <b>Shareable Link: {{_id}}</b>
               </div>
           </div>
       <br>

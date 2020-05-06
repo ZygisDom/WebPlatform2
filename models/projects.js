@@ -91,6 +91,19 @@ class DAO {
         });
     }
 
+	//Get a project by its ID
+    getProjectByID(_id) {
+        return new Promise((resolve, reject) => {
+            this.db.find({ "_id": _id }, function (err, entries) {
+                if (err) {
+                    reject(err);
+                } else {
+                    resolve(entries);
+                }
+            });
+        });
+    }
+
 
     //Get all existing projects from the database
     getAllProjects() {
