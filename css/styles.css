@@ -1,0 +1,21 @@
+
+html {
+    background-color: #000 !important;
+}
+
+.card-margin-top{
+    margin-bottom: 30px;
+}
+
+.card-header span {
+    position: absolute;
+    right: 8px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.fa-size {
+
+    font-size: 1rem !important;
+    background-color: #000 !important;
+}

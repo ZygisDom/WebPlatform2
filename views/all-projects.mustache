@@ -1,0 +1,74 @@
+<html lang="en">
+
+<head>
+  {{>header}}
+</head>
+
+<body class="container">
+
+  <h1 class="display-4" style="padding-top: 50px; !important;">{{title}}</h1>
+
+    <div class="text-right">
+        <div class="btn-group dropup position-sticky" id="change-status" style="margin-bottom: 9.8rem;">
+            <button type="button" class="btn btn-primary dropdown-toggle btn-color" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding: 16px;margin-right: 15px; font-size: 1.1rem;">
+                View Shared Project
+            </button>
+            <div class="dropdown-menu" id="drpdwn">
+                <form  method="post" role="form">
+                    <div class="form-group">
+                        <label for="projectLink" class="mx-auto d-flex justify-content-center" style="margin: 10px 0 !important;">Patient's ID</label>
+                        <input type="name" class="form-control mx-auto d-flex justify-content-center" name="projectLink" id="projectLink" aria-describedby="emailHelp">
+                    </div>
+                    <button type="submit" class="btn btn-primary mx-auto d-flex justify-content-center" id="ViewProject" >View Project</button>
+                </form>
+            </div>
+        </div>
+
+      <a href="/add" class="btn btn-primary position-sticky" style="margin-bottom: 9.8rem; padding: 16px; font-size: 1.1rem;">
+        Add a new project
+      </a>
+        <h2 class="display-5 float-left" style="margin-top: 5rem;">Projects in Progress</h2>
+    </div>
+
+    <div class="text-left" style="margin-bottom: 1rem;">
+      <br>
+
+      {{#projects}}
+          <div class="card" >
+              <h4 class="card-header">
+                  Project Name: {{project}}
+                  <a href="delete/{{project}}"><i class="fa fa-trash fa-lg fa-size float-right"></i></a>
+                  <a href="edit/{{project}}"><i class="fa fa-edit fa-lg fa-size float-right"></i></a>
+              </h4>
+
+              <div class="card-body">
+                  <div class="card-text">
+                      <b>Module:</b> {{module}}
+                  </div>
+                  <br>
+                  <div class="card-text">
+                      <b>Intended Completion Date:</b> {{intendedDate}}
+                  </div>
+                  <br>
+                  <div class="card-text">
+                      <b>Tasks: </b><br><br>
+                      {{#tasks}}
+                          <ul>
+                          {{#.}}
+                              <li>{{task}}</li>
+                          {{/.}}
+                          </ul>
+                      {{/tasks}}
+                  </div>
+              </div>
+              <div class="card-footer">
+                  <h5>Actual Due Date: {{actualDueDate}}</h5>
+                  <b>Shareable Link: {{_id}}</b>
+              </div>
+          </div>
+      <br>
+      </div>
+      {{/projects}}
+</body>
+
+</html>
