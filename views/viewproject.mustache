@@ -1,0 +1,53 @@
+<html lang="en">
+
+<head>
+    {{>header}}
+</head>
+
+<body class="container">
+
+<h1 class="display-4">{{title}}</h1>
+<h2 class="display-5">View shared project</h2>
+
+<div class="text-left" style="margin-bottom: 1em;">
+    <br>
+
+{{#projects}}
+        <div class="card">
+            <h5 class="card-header">
+                Project Name: {{project}}
+                <a href="delete/{{project}}"><i class="fa fa-trash fa-lg"></i></a>
+                <a href="edit/{{project}}"><i class="fa fa-edit fa-lg"></i></a>
+            </h5>
+
+            <div class="card-body">
+                <div class="card-text">
+                    Module: {{module}}
+                </div>
+                <div class="card-text">
+                    Intended Completion Date: {{intendedDate}}
+                </div>
+                <div class="card-text">
+                    Tasks: <br>
+                    {{#tasks}}
+                        <ul>
+                            {{#.}}
+                                <li>{{task}}</li>
+                            {{/.}}
+                        </ul>
+                    {{/tasks}}
+                </div>
+            </div>
+            <div class="card-footer">
+                <b>Actual Due Date: {{actualDueDate}}</b>
+                <br>
+            </div>
+        </div>
+        <br>
+    </div>
+{{/projects}}
+
+</div>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+{{>header}}
+</head>
+<body class="container">
+
+    <h1 class="display-4">{{title}}</h1>
+    <h2 class="display-4">Edit Project</h2> 
+
+<form method="post" role="form"> 
+{{#item}}
+  <div class="form-group">
+    <label for="project">Project Name: </label>
+    <input type="text" class="form-control-plaintext" id="project" name="project"  value="{{project}}" >
+  </div>
+
+   <div class="form-group">
+    <label for="module">Module: </label>
+    <input type="text" class="form-control-plaintext" id="module" name="module" value="{{module}}" >
+   </div>
+
+   <div class="form-group">
+    <label for="intendedDate">Intended Completion Date: </label>
+    <input type="text" class="form-control" id="intendedDate" name="intendedDate" value="{{intendedDate}}" >
+   </div>
+
+   <div class="form-group">
+    <label for="actualDueDate">Actual Due Date: </label>
+    <input type="text" class="form-control" id="actualDueDate" name="actualDueDate" value="{{actualDueDate}}" >
+  </div>
+
+    <div class="form-group">
+        <label for="tasks">Tasks: </label>
+        <input type="text" class="form-control" id="tasks" name="tasks" placeholder="tasks" required>
+    </div>
+
+  <div class="form-group">
+    <input type="submit" value="Save project details" class="btn btn-primary">
+  </div>
+{{/item}}
+</form>
+</body>
+</html>

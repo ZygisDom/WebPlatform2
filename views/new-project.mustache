@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+{{>header}}
+</head>
+<body class="container">
+
+    <h1 class="display-4">{{title}}</h1>
+    <h2 class="display-4">Add New Project</h2> 
+
+<form method="post" role="form">
+
+  <div class="form-group">
+        <label for="project">Project: </label>
+        <input type="text" class="form-control" id="project" name="project" placeholder="Insert project name" required>
+  </div>
+
+    <div class="form-group">
+        <label for="module">Module: </label>
+        <input type="text" class="form-control" id="module" name="module" placeholder="Insert module name" required>
+    </div>
+
+    <div class="form-group">
+        <label for="intendedDate">Intended Due Date: </label>
+        <input type="text" class="form-control" id="intendedDate" name="intendedDate" placeholder="Intended Due Date" required>
+    </div>
+
+    <div class="form-group">
+        <label for="actualDueDate">Actual Due Date: </label>
+        <input type="text" class="form-control" id="actualDueDate" name="actualDueDate" placeholder="Actual Due Date" required>
+    </div>
+    <div class="form-group">
+        <label for="tasks">Tasks: </label>
+        <input type="text" class="form-control" id="tasks" name="tasks" placeholder="tasks" required>
+    </div>
+
+  <div class="form-group">
+    <input type="submit" value="Add project" class="btn btn-primary">
+  </div>
+</form>
+</body>
+</html>
